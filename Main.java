@@ -1,32 +1,15 @@
-import java.io.*;
-
-class GFG{
-
-    public static void main (String[] args)
-    {
-
-        // Size of the pyramid
-        int number = 7;
-        int i, j;
-
-        // Outer loop handle the number of rows
-        for(i = number; i >= 1; i--)
-        {
-
-            // Inner loop print space
-            for(j = i; j < number; j++)
-            {
-                System.out.print(" ");
-            }
-
-            // Inner loop print star
-            for(j = 1; j <= (2 * i - 1); j++)
-            {
-                System.out.print("*");
-            }
-
-            // Ending line after each row
-            System.out.println("");
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+    char[][] a=new char[][]{
+            new char[] {'*','*','*'},
+            new char[] {'1','2','3','4'}};
+    for(int i=0;i<a.length;i++){
+        for(int j=0;j<a[i].length;j++){
+            System.out.println(a[i][j]);
         }
+        System.out.println();
+    }
     }
 }
